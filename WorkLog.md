@@ -1,0 +1,3 @@
+July 14,2013 ....
+ 	Start everything. Finish register part with tutorial. 
+
