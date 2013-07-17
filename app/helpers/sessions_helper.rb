@@ -1,6 +1,9 @@
 module SessionsHelper
 	def sign_in(user , set_cookie)
+<<<<<<< HEAD
 		# 1 for permanent cookie, 0 for temporary cookie, 2 for no change to the cookie(used when update)
+=======
+>>>>>>> 7637ccc668a25b67ab2aefcdf53f8963e6ce64dc
 		if set_cookie.to_s == "1".to_s
 		   cookies.permanent[:remember_token] = user.remember_token 
 		else
