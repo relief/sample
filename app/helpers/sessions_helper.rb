@@ -1,8 +1,11 @@
 module SessionsHelper
-	def sign_in(user)
-		
-		cookies[:remember_token] = user.remember_token
-		self.current_user = user
+	def sign_in(user , set_cookie)
+		if set_cookie.to_s == "1".to_s
+		   cookies.permanent[:remember_token] = user.remember_token 
+		else
+		   cookies[:remember_token] = user.remember_token
+		end
+   		self.current_user = user			
 	end
 	def signed_in?
 		!current_user.nil?
