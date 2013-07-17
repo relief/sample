@@ -2,7 +2,9 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 gem 'bootstrap-sass','2.1'
-gem 'bcrypt-ruby', '~>3.0.0' 
+gem 'bcrypt-ruby', '~>3.0.0'
+gem 'faker'
+gem 'will_paginate'  
 group :development, :test do
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.11.0'

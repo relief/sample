@@ -9,7 +9,11 @@
 
 	      <%= f.label :password %>
 	      <%= f.password_field :password %>
-
+	
+   	      <%= f.label :set_cookie, :style => "float:right;" do %>
+  		 <%= f.check_box :set_cookie %>
+  		 下次自动登陆
+	      <% end %>
 	      <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
 	   <% end %>
 	   <p>New user? <%= link_to "Sign up now!", signup_path %></p>
